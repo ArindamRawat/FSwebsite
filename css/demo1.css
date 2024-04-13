@@ -1,0 +1,144 @@
+.cool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aero{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+  border:.5px solid #fff;
+  font-size: 60px;
+   
+}
+
+
+.aero span{
+    position: absolute;
+    display: block;
+}
+.aero span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    /* background: linear-gradient(90deg,transparent,#03e9f4); */
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.aero span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(180deg,transparent,#03e9f4); */
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.aero span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    /* background: linear-gradient(270deg,transparent,#03e9f4); */
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.aero span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(360deg,transparent,#03e9f4); */
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+/* :root {
+	--bg-color-1: #0b0826;
+	--bg-color-2: #0049fb;
+	--bg-color-3: #b100e8;
+	--border-color: #74C1E3;
+} */
+
+body {
+	background: linear-gradient(to right, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
+}
+
+.aero:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+}
+
+.footer{
+    background-color: red;
+    /* text-align: left; */
+    width: 100%;
+    position: absolute;
+    font-size: 25px;
+    bottom: -454rem;
+    height: 275px
+    /* padding-top: 9px; */
+}
+.left-side{
+    width: 45%;
+    padding-top: 9px;
+    background-color: blue;
+    /* float: left; */
+}
+.right-side{
+    background-color: green;
+    /* padding-top: 9px; */
+    width: 45%;
+    float: right;
+
+}

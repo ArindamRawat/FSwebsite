@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll to Div on Button Click</title>
+<style>
+  /* Some basic styling for demonstration */
+  #scrollToDiv {
+    height: 1000px; /* Height just for demonstration */
+    background-color: lightblue;
+    margin-top: 1500px; /* Margin just for demonstration */
+  }
+  #myButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<button id="myButton">Scroll to Div</button>
+
+<div id="scrollToDiv">
+  <!-- Content of the div you want to scroll to -->
+  This is the div you want to scroll to.
+</div>
+
+<!-- Your other content here -->
+
+<script>
+document.getElementById("myButton").addEventListener("click", function() {
+    // Scroll to the div with id "scrollToDiv" when the button is clicked
+    document.getElementById("scrollToDiv").scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

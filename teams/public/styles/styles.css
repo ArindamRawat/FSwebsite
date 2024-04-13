@@ -239,6 +239,7 @@ p {
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .logo{
   width: 100px;
+height: 100px;
 }
 
 header {
@@ -249,8 +250,11 @@ header {
   top: 0;
   left: 0;
   border-bottom: 1px solid white;
-  background-color: #000;
   background-color:rgba(255, 255, 255, 0.167);
+}
+
+.fix1{
+  font-size:30px;
 }
 
 body {

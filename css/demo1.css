@@ -120,12 +120,16 @@ body {
 }
 
 .footer{
-    background-color: red;
+    background-color: transparent;
     /* text-align: left; */
     width: 100%;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    /* position: absolute;
     font-size: 25px;
-    bottom: -454rem;
+    bottom: -454rem; */
     height: 275px
     /* padding-top: 9px; */
 }
@@ -141,4 +145,10 @@ body {
     width: 45%;
     float: right;
 
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }

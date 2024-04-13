@@ -507,6 +507,7 @@ a {
 /* Original styles for desktop */
 .logo{
     width: 100px;
+	height: 100px;
 }
 
 header {
@@ -663,7 +664,7 @@ header ul a{
   /* header end*/
 
   .textm{
-	margin-top: 20px;
+	margin-top: 50px;
 	height: 90px;
 	background-color: black;
 	font-size: 75px;
